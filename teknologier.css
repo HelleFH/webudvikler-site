@@ -12,7 +12,7 @@ h3 {
   padding-bottom: 1.5em;
 }
 
-.teknologier-section1-container {
+.teknologier-container {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
@@ -24,12 +24,12 @@ h3 {
 
 }
 
-.teknologier-section1-billede-html {
+.teknologier-billede-html {
   padding: 1em 2em 1.2em 2em;
   background-color: rgb(242, 232, 207);
 }
 
-.teknologier-section1-css-js {
+.teknologier-css-js {
   background-color: rgb(242, 232, 207);
   padding: 0.5em 2em 1.2em 2em;
 
@@ -40,7 +40,7 @@ h3 {
 }
 
 
-.teknologier-section1-html h2 {
+.teknologier-html h2 {
   font-size: 20px;
 }
 
@@ -61,7 +61,7 @@ h3 {
     white-space: pre-wrap;
   }
 
-  .teknologier-section1-container {
+  .teknologier-container {
     display: block;
     flex-direction: row;
     gap: 1.5em;
@@ -69,7 +69,7 @@ h3 {
     margin-top: -4%;
   }
 
-  .teknologier-section1-css-js {
+  .teknologier-css-js {
     background-color: rgb(242, 232, 207);
     border-radius: 2px;
     padding-left: 2em;
@@ -80,11 +80,11 @@ h3 {
 
   }
 
-  .teknologier-section1-css-js p {
+  .teknologier-css-js p {
     padding-bottom: 1em;
   }
 
-  .teknologier-section1-html h2 {
+  .teknologier-html h2 {
     font-size: 20px;
   }
 

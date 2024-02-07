@@ -41,7 +41,6 @@ h2 {
 
 }
 
-/******LÆS MERE*/
 summary h3 {
     display: inline-block;
 }
@@ -105,10 +104,6 @@ details p {
 
 
 @media (max-width: 767px) {
-
-
-
-
 
     .karriere-container {
         margin-top: 2em;

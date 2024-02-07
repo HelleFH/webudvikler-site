@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var autoUpdate = false,
     timeTrans = 4000;
 
-  var cdSlider = document.querySelector('.index_slider'),
+  var cdSlider = document.querySelector('.index-slider'),
     item = cdSlider.querySelectorAll("li"),
     nav = cdSlider.querySelector("nav");
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var msie = ua.indexOf("MSIE");
   if (msie > 0) {
     var version = parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-    if (version === 9) { cdSlider.className = "index_slider ie9"; }
+    if (version === 9) { cdSlider.className = "index-slider ie9"; }
   }
 
   if (item.length <= 1) {
@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
       prevSlide = (prevElement !== null) ? prevElement : item[item.length - 1],
       prevColor = prevSlide.getAttribute("data-color"),
       el = document.createElement('span');
+      el.id = 'slider_slide'
+
 
     currentSlide.className = "";
     prevSlide.className = "current_slide";
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.children[0].appendChild(el);
 
     var size = (cdSlider.clientWidth >= cdSlider.clientHeight) ? cdSlider.clientWidth * 2 : cdSlider.clientHeight * 2,
-      ripple = nav.children[0].querySelector("span");
+      ripple = document.getElementById("slider_slide");
 
     ripple.style.height = size + 'px';
     ripple.style.width = size + 'px';
@@ -70,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nextSlide = (nextElement !== null) ? nextElement : item[0],
       nextColor = nextSlide.getAttribute("data-color"),
       el = document.createElement('span');
+      el.id = 'slider_slide'
 
     currentSlide.className = "";
     nextSlide.className = "current_slide";
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.children[1].appendChild(el);
 
     var size = (cdSlider.clientWidth >= cdSlider.clientHeight) ? cdSlider.clientWidth * 2 : cdSlider.clientHeight * 2,
-      ripple = nav.children[1].querySelector("span");
+      ripple = document.getElementById("slider_slide");
 
     ripple.style.height = size + 'px';
     ripple.style.width = size + 'px';
@@ -106,18 +109,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var prevColor = (currentSlide.previousElementSibling !== null) ? currentSlide.previousElementSibling.getAttribute("data-color") : item[item.length - 1].getAttribute("data-color");
 
     if (item.length > 2) {
-      nav.querySelector(".index_slider-prev").style.backgroundColor = prevColor;
-      nav.querySelector(".index_slider-next").style.backgroundColor = nextColor;
+      nav.querySelector(".index-slider-prev").style.backgroundColor = prevColor;
+      nav.querySelector(".index-slider-next").style.backgroundColor = nextColor;
     }
   }
 
-  nav.querySelector(".index_slider-next").addEventListener('click', function (event) {
+  nav.querySelector(".index-slider-next").addEventListener('click', function (event) {
     event.preventDefault();
     nextSlide();
     updateNavColor();
   });
 
-  nav.querySelector(".index_slider-prev").addEventListener("click", function (event) {
+  nav.querySelector(".index-slider-prev").addEventListener("click", function (event) {
     event.preventDefault();
     prevSlide();
     updateNavColor();

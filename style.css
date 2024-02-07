@@ -115,9 +115,9 @@ p {
 }
 
 
-/*HERO IMAGE OG TEKST*/
+/*HERO IMAGE OG text*/
 
-.hero_text {
+.hero-text {
   /**OVERSKRIFTER SOM LIGGER I HERO IMAGE*/
   display: grid;
   align-items: center;
@@ -129,7 +129,7 @@ p {
 
 
 
-.hero_image {
+.hero-image {
   margin: 0 auto;
   max-width: 1050px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("images/bg.jfif");
@@ -326,7 +326,7 @@ footer {
   padding-bottom: 1em;
 }
 
-.footer-tekst {
+.footer-text {
   padding-right: 1em;
   padding-top: 2em;
   font-style: normal;
@@ -459,7 +459,7 @@ footer {
     font-size: 42px;
 
   }
-  .hero_text {
+  .hero-text {
     display: grid;
     align-items: center;
     text-align: center;
@@ -471,15 +471,17 @@ footer {
     font-size: 18px;
 
   }
-  .index_slider-next::before {height:40% !important;}
-  .index_slider-next::after {height:40% !important;}
+  .index-slider-next::before {height:40% !important;}
+  .index-slider-next::after {height:40% !important;}
   
 
-.hero_image {max-width: 89.8%;}
+.hero-image {max-width: 89.8%;}
 
   .page-content {
     max-width: 95vw;
     margin-top:1em;
+    padding-left:2%;
+    padding-right:2%;
 
   }
   header {
@@ -644,7 +646,7 @@ footer {
     padding-bottom: 0.5em;
   }
 
-  .footer-tekst {
+  .footer-text {
     display: none;
     padding-right: 1em;
     padding-top: 1em;
