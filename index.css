@@ -40,8 +40,9 @@
 .index-slider-container {
   grid-column: 2;
   grid-row: 2;
-  width: 40vw;
+  width: 30vw;
   min-width: 400px;
+  max-width: 450px;
   justify-self: end;
 }
 
