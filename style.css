@@ -27,8 +27,8 @@
 
 body {
   background-color: rgb(106, 153, 78);
-  overflow:visible;
-  height:100%;
+  overflow: visible;
+  height: 100%;
 
 }
 
@@ -98,6 +98,7 @@ p {
   font-weight: 700;
   font-size: 89px;
   color: rgb(188, 71, 73);
+  background-color: transparent !important;
   ;
 }
 
@@ -108,6 +109,8 @@ p {
   font-weight: 600;
   font-size: 38px;
   justify-content: center;
+  background-color: transparent !important;
+
 }
 
 .bold {
@@ -361,23 +364,15 @@ footer {
 }
 
 .flex2 {
-
   flex: 2;
-
-
-
 }
 
 .flex3 {
-
   flex: 3;
-
 }
 
 .flex4 {
-
   flex: 4;
-
 }
 
 @keyframes fadeInAnimation1 {
@@ -459,31 +454,41 @@ footer {
     font-size: 42px;
 
   }
+
   .hero-text {
     display: grid;
     align-items: center;
     text-align: center;
     grid-template-rows: 100px 50px;
-}
+  }
 
   .hero-h3 {
 
     font-size: 18px;
 
   }
-  .index-slider-next::before {height:40% !important;}
-  .index-slider-next::after {height:40% !important;}
-  
 
-.hero-image {max-width: 89.8%;}
+  .index-slider-next::before {
+    height: 40% !important;
+  }
+
+  .index-slider-next::after {
+    height: 40% !important;
+  }
+
+
+  .hero-image {
+    max-width: 89.8%;
+  }
 
   .page-content {
     max-width: 95vw;
-    margin-top:1em;
-    padding-left:2%;
-    padding-right:2%;
+    margin-top: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
 
   }
+
   header {
     display: flex;
     position: absolute;

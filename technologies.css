@@ -1,4 +1,3 @@
-/********************SPROGBESKRIVELSER*****************/
 h2 {
   padding-bottom: 1em;
 }
@@ -8,51 +7,20 @@ h3 {
   padding-top: 1em;
 }
 
-.teknologier-introtext {
-  padding-bottom: 1.5em;
-}
-
-.teknologier-container {
+.technologies-container {
   display: flex;
   flex-direction: row;
-  gap: 1.5em;
-  padding-top: 2em;
-  margin-top: -4%;
-  box-sizing: border-box;
-  margin-bottom: 2em;
-
-
+  gap: 1em;
+  padding: 1em;
+  margin-top: 1em;
 }
 
-.teknologier-billede-html {
-  padding: 1em 2em 1.2em 2em;
+.flex-container {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(242, 232, 207);
+  padding: 1em;
 }
-
-.teknologier-css-js {
-  background-color: rgb(242, 232, 207);
-  padding: 0.5em 2em 1.2em 2em;
-
-}
-
-.teknologier-illustration-caption {
-  font-size: small;
-}
-
-
-.teknologier-html h2 {
-  font-size: 20px;
-}
-
-
-
-
-.codepen-section {
-  background-color: rgb(167, 201, 87, 0.3);
-  ;
-}
-
-
 
 @media only screen and (max-width: 600px) {
 
@@ -60,33 +28,10 @@ h3 {
   h2 {
     white-space: pre-wrap;
   }
-
-  .teknologier-container {
-    display: block;
-    flex-direction: row;
-    gap: 1.5em;
-    padding-top: 2em;
-    margin-top: -4%;
+  .technologies-container {
+    flex-direction: column;
+    gap:0em;
+ 
   }
-
-  .teknologier-css-js {
-    background-color: rgb(242, 232, 207);
-    border-radius: 2px;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-
-
-  }
-
-  .teknologier-css-js p {
-    padding-bottom: 1em;
-  }
-
-  .teknologier-html h2 {
-    font-size: 20px;
-  }
-
-  z
+  
 }

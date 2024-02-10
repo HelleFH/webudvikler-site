@@ -1,45 +1,26 @@
-/************GRID TIL INDEX**********/
 .page-content p {
-  font-size: 22px;
+  font-size: 18px;
 }
 
-.index p {
-  padding-bottom: 1em;
-}
-
-.index-introtext {
+.page-content {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
-
-.index-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3em;
-  padding-top: 2.5em;
-
-
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom:1em;
 }
 
-.index-image {
-  grid-column: 1;
-  grid-row: 1
-}
-
-.index-p1 {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.index-p2 {
-  grid-column: 1;
-  grid-row: 2;
-}
 
 .index-slider-container {
-  grid-column: 2;
-  grid-row: 2;
+
   width: 30vw;
   min-width: 400px;
   max-width: 450px;
@@ -47,16 +28,11 @@
 }
 
 
-/***********slider***************/
-
-
 .index-slider a {
   text-decoration: none;
   color: rgba(225, 255, 255);
 }
 
-
-/* Slider style */
 .index-slider {
   position: relative;
 
@@ -67,11 +43,9 @@
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 
-
 }
 
 #index-slider-header {
-
   transition: background-color 0.8s ease-in-out;
   font-size: 22px;
   font-weight: 700;
@@ -242,10 +216,8 @@
   background-color: rgb(242, 232, 207);
   padding: 2em;
   margin-bottom: 3em;
-  grid-column: 1/span 3;
-  grid-row: 3;
-}
 
+}
 
 
 .index-links-hover a,
@@ -300,32 +272,8 @@
 
 
 @media only screen and (max-width: 600px) {
+.flex-container {flex-direction: column;}
 
- 
-
-  .index-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .index-image {
-    grid-column: unset;
-    grid-row: unset;
-    margin-bottom: 1em;
-  }
-
-  .index-p1 {
-    grid-column: unset;
-    grid-row: unset;
-  }
-
-  .index-p2 {
-    grid-column: unset;
-    grid-row: unset;
-    margin-top: 2em;
-  }
 
   .index-slider-container {
     width: 90vw;
@@ -341,6 +289,7 @@
     display: inline-block;
     padding: 4px;
   }
+
   .index-slider-prev,
   .index-slider-next {
     height: 2em;
