@@ -15,9 +15,15 @@
   align-items: center;
   gap: 1.5em;
   padding-top: 1.5em;
-  padding-bottom:1em;
+  padding-bottom: 1em;
+
+
 }
 
+.flex-container {
+  background-color: rgb(242, 232, 207);
+  padding: 2em;
+}
 
 .index-slider-container {
 
@@ -25,8 +31,9 @@
   min-width: 400px;
   max-width: 450px;
   justify-self: end;
-}
+  background-color: transparent;
 
+}
 
 .index-slider a {
   text-decoration: none;
@@ -272,7 +279,9 @@
 
 
 @media only screen and (max-width: 600px) {
-.flex-container {flex-direction: column;}
+  .flex-container {
+    flex-direction: column;
+  }
 
 
   .index-slider-container {
