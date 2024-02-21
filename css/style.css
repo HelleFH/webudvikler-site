@@ -135,7 +135,7 @@ p {
 .hero-image {
   margin: 0 auto;
   max-width: 1050px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("images/bg.jfif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("/images/bg.jfif");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -307,13 +307,13 @@ footer {
   background-color: #2E1A47;
   color: white;
   bottom: 0 !important;
-  height: 206px;
   font-family: 'Inter';
   display: flex;
   justify-content: space-between;
   z-index: -1;
   position: relative;
   background: #0B737D;
+  
 
 }
 

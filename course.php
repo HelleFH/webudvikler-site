@@ -6,100 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webudvikler</title>
-
-    <link href="style.css" rel="stylesheet">
-
-    <script src="burger.js" defer></script>
-    <link href="course.css" rel="stylesheet">
-
-
-
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/burger.js" defer></script>
+    <link href="css/course.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
-    <div class="background_container">
-        <div class="background"></div>
-    </div>
 
-
-    <header tabindex="0"> <a href="forside.html" class="active-link">
-            <img class="menu-logo-mobil" src="images/menu-logo.png" class="active-link">
-        </a></header>
-    <div id="nav-container">
-        <div class="bg"></div>
-        <div class="burger-icon" tabindex="0">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-        <div id="nav-content" tabindex="0">
-            <ul>
-                <li>
-                    <a href="index.html" class="active-link">
-                        <img class="menu-logo" src="images/menu-logo.png" class="active-link">
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Forside</a>
-                </li>
-                <li>
-                    <a href="course.html">Uddannelsen</a>
-                </li>
-                <li>
-                    <a href="career.html">Karriere</a>
-                </li>
-                <li>
-                    <a href="technologies.html">Teknologier</a>
-                </li>
-                <li>
-                    <a href="resources.html">resources</a>
-                </li>
-
-                <li class="font-awesome"><a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+  <?php include("components/header.php"); ?>
+  <main>
+    <?php include("components/hero.php"); ?>
     <div id="wrapper">
-        <section>
-            <div class="hero-image">
+      <?php include("components/background.php"); ?>
+      <div class="page-content">
 
-            </div>
-        </section>
-
-        <main>
-
-
-            <div class="hero-text">
-
-                <div class="page-content-heading flex1">
-                    <p class="hero-h1">Webudvikler</p>
-                </div>
-                <div class=" page-content-subheading">
-                    <p class="hero-h3">Fremtidens IT-håndværkere</p>
-                </div>
-            </div>
-
-            <div class="page-content">
-                <!-- START--->
-                    <h1>Uddannelse</h1>
+                <h1>Uddannelse</h1>
                     <div>
                         <p>Uddannelsen som webudvikler tager 1 år og 9 måneder hvis du starter på grudforløb 2, 2 år og
                             3 måneder hvis
                             du starter på grundforløb 1, og tager altså mindre tid end andre erhversuddannelser. Dette
                             er fordi kurset
                             udelukkende er skolebaseret, det er altså ikke nødvendigt at finde en læreplads.
-                     Der er
+                             Der er
                             daglig
                             klasseundervisning hvor skolens computere anvendes og alle undervisningmaterialer er online,
                             så du behøver
                             ikke tage noget med dig i skole.</p>
 
                     </div>
-
 
                     <div class="info-box-container">
                         <div class="info-box">
@@ -198,30 +134,9 @@
                             komme ind på et adgangskursus til videregående uddannelser.
                     </div>
                 </div>
-</div>
         </main>
 
-
-
-        <footer class="footer">
-
-            <div> <img class="footer-pil" src="images/logo_arrow.png">
-            </div>
-            <div class="footer-text">
-                <div class=> NEXT København </div>
-                <div class="adresse">Carl Jacobsens vej 25,
-                    2500 Valby</div>
-                <div class="telefon"><span class="rød">Telefon</span>: 33 88 00 00 </div>
-                <div class="email"><span class="rød">E-mail:</span> next@nextkbh.dk</div>
-                <div class="cvr"> <span class="rød">CVR:</span> 11748708</div>
-                <div class="ean"> <span class="rød">EAN:</span>
-                    5798 000 553446</div>
-
-        </footer>
-    </div>
-    </div>
-
-
+<?php include("components/footer.php"); ?>
 
 </body>
 

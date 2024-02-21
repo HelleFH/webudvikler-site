@@ -238,9 +238,7 @@
 }
 
 .index-links-container a:hover {
-  color: rgb(167, 201, 87);
-  box-shadow: inset px 0 0 0 #54b3d6;
-
+  color: rgb(167, 201, 87) !important;
 }
 
 .index-links-container a {
@@ -252,31 +250,29 @@
   text-decoration: none;
 }
 
-.index-links-item_1 a {
+.index-links-container > .index-links-item:nth-child(1) > a {
   color: rgb(188, 71, 73);
   ;
 }
 
-.index-links-item_2 a {
+.index-links-container > .index-links-item:nth-child(2) > a {
   color: rgb(56, 102, 65);
 }
 
-.index-links-item_3 a {
+.index-links-container > .index-links-item:nth-child(3) > a{
   color: rgb(188, 71, 73);
 }
 
-.index-links-item_4 a {
+.index-links-container > .index-links-item:nth-child(4) > a {
   color: rgb(56, 102, 65);
 }
 
 @media only screen and (min-width: 600px) and (max-width:1000px) {
 
-
   .index-container {
     display: block;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   .flex-container {
