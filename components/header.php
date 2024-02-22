@@ -30,7 +30,7 @@
           <a href="technologies.php">Teknologier</a>
         </li>
         <li>
-          <a href="resources.php">resources</a>
+          <a href="resources.php">Resourcer</a>
         </li>
 
         <li class="font-awesome"><a href="#"><i class="fab fa-facebook"></i></a>

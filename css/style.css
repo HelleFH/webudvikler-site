@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: rgb(106, 153, 78);
+  background-color: rgb(244,244,244);
   overflow: visible;
   height: 100%;
 
@@ -152,7 +152,7 @@ p {
   /**DEN DEL I MIDTEN HVOR INDHOLDET LIGGER I, DEN DEL SOM MAN SCROLLER NED, OVEN PÅ HERO IMAGE*/
   max-width: 100%;
   z-index: 1;
-  background-color: rgb(242, 232, 207, 0.85);
+  background-color: rgb(242, 232, 207, 0.99);
   margin-top: 200px;
   padding-left: 10%;
   padding-right: 10%;

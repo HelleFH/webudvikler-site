@@ -15,7 +15,7 @@ function showSlide(n) {
   const prevColor = prevSlide.getAttribute('data-color');
   header.style.borderBottomColor = prevColor;
 
-    header.style.color = 'rgb(242, 232, 207)';
+    header.style.color = 'white';
   
 }
 
